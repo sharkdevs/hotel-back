@@ -1,0 +1,32 @@
+{
+  "name": "hotel-back",
+  "version": "1.0.0",
+  "description": "A backend for my hotel App",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test",
+    "build": "babel --presets es2015 -d lib/ src",
+    "start": "NODE_ENV=development  DEBUG=log nodemon --exec babel-node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkdevs/hotel-back.git"
+  },
+  "keywords": [
+    "Hotel",
+    "backend"
+  ],
+  "author": "sharkdevs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharkdevs/hotel-back/issues"
+  },
+  "homepage": "https://github.com/sharkdevs/hotel-back#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
